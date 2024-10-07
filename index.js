@@ -59,9 +59,9 @@ async function startRec() {
     })
 
     let stream = new MediaStream([
-        ...aud1,
-        ...aud2,
-        ...vid
+        ...aud1.getTracks(),
+        ...aud2.getTracks(),
+        ...vid.getVideoTracks()
     ])
     preview.srcObject = stream
 }
