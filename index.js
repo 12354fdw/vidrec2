@@ -58,9 +58,15 @@ async function startRec() {
         video: {width:{ideal:width},height:{ideal:height},frameRate:{ideal:60}}
     })
 
+    const ac = new AudioContext()
+    const s1 = ac.createMediaStreamSource(aud1)
+    const s2 = ac.createMediaStreamSource(aud2)
+    const dest = ac.createMediaStreamDestination()
+    s1.connect(dest)
+    s2.connect(dest)
+
     let stream = new MediaStream([
-        ...aud1.getTracks(),
-        ...aud2.getTracks(),
+        ...dest.stream.getAudioTracks(),
         ...vid.getVideoTracks()
     ])
     preview.srcObject = stream
