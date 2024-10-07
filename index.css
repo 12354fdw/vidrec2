@@ -1,0 +1,66 @@
+html {
+    font-family: Arial;
+}
+
+button {
+    font-size: 0.7em;
+    width: 22%;
+    height: 15%;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start {
+    background-color: greenyellow;
+}
+#start:hover {
+    background-color: rgb(96, 160, 0);
+}
+
+#stop {
+    background-color: rgb(255, 0, 51);
+}
+#stop:hover {
+    background-color: rgb(164, 0, 33);
+}
+
+#download {
+    background-color: rgb(136, 136, 136);
+}
+
+#download:hover {
+    background-color: rgb(76, 76, 76);
+}
+
+#preview {
+    position: absolute;
+    left: 31%;
+    top: 10%;
+    width:30%;
+    height:30%;
+    background-color:rgb(255, 255, 255);
+    border:1px;
+    padding:1px;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.display {
+    width:30%;
+    height:30%;
+    background-color:rgb(255, 255, 255);
+    border:1px solid;
+    padding:1px;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.text {
+    margin:1px;
+    width:30%;
+    display:inline-block;
+}

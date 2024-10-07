@@ -1,0 +1,39 @@
+<html>
+    <h1>Video recorder 2</h1>
+    <div class="display">
+        <p class="text">Controls</p>
+        <br>
+
+        <button id="start">Start</button>
+        <button id="stop" disabled>Stop</button>
+        <br>
+        
+        <p class="text">Resolution:</p>
+        <select id="res">
+            <option value="192x144">144p</option>
+            <option value="426x240">240p</option>
+            <option value="480x360">360p</option>
+            <option value="640x480">480p</option>
+            <option value="1280x720">720p</option>
+            <option value="1920x1080">1080p</option>
+            <option value="2560x1440">1440p</option>
+            <option value="3840x2160">4K</option>
+         </select>
+        <br>
+
+        <p class="text">Audio input 1:</p>
+        <select id="aud1"> </select>
+        <br>
+
+        <p class="text">Audio input 2:</p>
+        <select id="aud2"> </select>
+        <br>
+
+        <button id="download" disabled>Download</button>
+        <br>
+        <p class="text">Size: 0B</p>
+    </div>
+    <video id="preview" controls autoplay muted></video>
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js"> </script>
+</html>
