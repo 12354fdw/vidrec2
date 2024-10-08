@@ -47,11 +47,11 @@ async function startRec() {
     let bitrate = Math.min(width * height * 60, 20000000)
 
     aud1 = await navigator.mediaDevices.getUserMedia({
-        audio: {deviceId:{exact:sAud1.value},noiseSuppression:false}
+        audio: {deviceId:{exact:sAud1.value},noiseSuppression:true}
     });
 
     aud2 = await navigator.mediaDevices.getUserMedia({
-        audio: {deviceId:{exact:sAud2.value},noiseSuppression:false}
+        audio: {deviceId:{exact:sAud2.value},noiseSuppression:true}
     })
 
     vid = await navigator.mediaDevices.getDisplayMedia({
